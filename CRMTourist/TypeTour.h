@@ -9,9 +9,9 @@ class TypeTour
 	  
 	 void setData(string typeOfTour);
 
-private:
+ private:
 
-	string typeOfTour_;
+	 string typeOfTour_;
 
 };
 
