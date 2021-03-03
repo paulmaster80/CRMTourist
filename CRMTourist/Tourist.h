@@ -10,8 +10,8 @@ public:
     void printData();
 
 private:
-    string firstName_;
-    string lastName_;
-    int age_;
+    string _firstName;
+    string _lastName;
+    int _age;
 };
 

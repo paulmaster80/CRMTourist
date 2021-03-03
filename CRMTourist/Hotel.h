@@ -5,15 +5,29 @@ using namespace std;
 
 class Hotel
 {
- public: 
+public: 
 
-	 void setData(string countryHotel, int categoryHotel, string nameHotel);
-
+	Hotel();
+	Hotel(string country, int category, string name);
+	Hotel(Hotel& other);
+	~Hotel();
+	
+	 Hotel& operator= (Hotel& other);
+	 void setData(string country, int category, string name);
+	 string getData();
+	 void setCountry(string country);
+	 void setCategory(int category);
+	 void setNameHotel(string name);
+	 string country();
+	 int category();
+	 string name();
+	
 private:
 
-	string countryHotel_;
-	int categoryHotel_;
-	string nameHotel_;
+	string _country;
+	string _adress;
+	int _category;
+	string _name;
 	
 };
 

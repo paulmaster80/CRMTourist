@@ -13,7 +13,8 @@ public:
 	UserInterface(Database& database);
 
 	Hotel& inputHotel();
-	void addHotel();
+	
+
 private:
 
 	Database& _database;

@@ -11,7 +11,7 @@ class TypeTour
 
  private:
 
-	 string typeOfTour_;
+	 string _typeOfTour;
 
 };
 

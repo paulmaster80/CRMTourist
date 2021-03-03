@@ -18,3 +18,9 @@ Hotel& UserInterface::inputHotel()
     // вернуть отель
     return *newHotel;
 }
+
+void UserInterface::addHotel()
+{
+
+
+}

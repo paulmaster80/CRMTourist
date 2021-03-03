@@ -7,8 +7,11 @@ void Database::addHotel(const Hotel& hotel)
 
 void Database::addTourist(const Tourist& tourist)
 {
+	_tourist.push_back(tourist);
 }
 
 void Database::addTypeTour(const TypeTour& typeTour)
 {
+	_typeTour.push_back(typeTour);
 }
+

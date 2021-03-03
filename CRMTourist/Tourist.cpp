@@ -3,12 +3,12 @@
 
 void Tourist::setData(string firstName, string lastName, int age)
 {
-    firstName_ = firstName;
-    lastName_ = lastName;
-    age_ = age;
+    _firstName = firstName;
+    _lastName = lastName;
+    _age = age;
 }
 
 void Tourist::printData()
 {
-    cout << firstName_ << " " << lastName_ << " " << age_ << endl;
+    cout << _firstName << " " << _lastName << " " << _age << endl;
 }
