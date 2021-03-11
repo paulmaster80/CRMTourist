@@ -24,6 +24,7 @@ public:
 	string getCountry();
 	string getCity();
 
+	void addHotel();
 	void printData();
 
 private:

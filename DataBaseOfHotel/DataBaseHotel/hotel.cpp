@@ -81,6 +81,13 @@ string Hotel::getCity()
     return _city;
 }
 
+void Hotel::addHotel()
+{
+    Hotel hotel;
+    cout << "Название: " << endl;
+    
+}
+
 void Hotel::printData()
 {
     cout << "Отель: " << _name << endl;
