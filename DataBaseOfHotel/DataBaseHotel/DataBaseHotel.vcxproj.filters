@@ -21,9 +21,18 @@
     <ClCompile Include="hotel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hotel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

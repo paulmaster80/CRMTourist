@@ -1,14 +1,17 @@
 #include "hotel.h"
+#include <iostream>
+
+using namespace std;
 
 Hotel::Hotel()
 {
-    _name = nullptr;
-    _adress = nullptr;
-    _category = nullptr;
-    _country = nullptr;
+    _name = "";
+    _adress = "";
+    _category = "";
+    _country = "";
 }
 
-Hotel::Hotel(string name, string adress, string category, string country)
+Hotel::Hotel(string name, string adress, string category, string country,string _city)
 {
     _name = name;
     _adress = adress;
@@ -20,7 +23,7 @@ Hotel::~Hotel()
 {
 }
 
-void Hotel::setData(string name, string adress, string category, string country)
+void Hotel::setData(string name, string adress, string category, string country, string _city)
 {
     _name = name;
     _adress = adress;
@@ -48,6 +51,11 @@ void Hotel::setCountry(string country)
     _country = country;
 }
 
+void Hotel::setCity(string city)
+{
+    _city = city;
+}
+
 string Hotel::getName()
 {
     return _name;
@@ -68,7 +76,16 @@ string Hotel::getCountry()
     return _country;
 }
 
+string Hotel::getCity()
+{
+    return _city;
+}
+
 void Hotel::printData()
 {
-
+    cout << "Отель: " << _name << endl;
+    cout << "Страна: " << _country << endl;
+    cout << "Город: " << _city << endl;
+    cout << "Адрес: " << _adress << endl;
+    cout << "Категория: " << _category << endl;
 }
