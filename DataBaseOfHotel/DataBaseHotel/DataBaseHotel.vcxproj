@@ -139,12 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DataBaseHotel.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="hotel.cpp" />
     <ClCompile Include="interface.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="functions.h" />
+    <ClInclude Include="database.h" />
     <ClInclude Include="hotel.h" />
     <ClInclude Include="interface.h" />
   </ItemGroup>

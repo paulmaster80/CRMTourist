@@ -12,7 +12,7 @@ public:
 	Hotel(string name, string adress, string category, string country, string _city);
 	~Hotel();
 
-	void setData(string name, string adress, string category, string country, string _city);
+	//void setData(string name, string adress, string category, string country, string _city);
 	void setName(string name);
 	void setAdress(string adress);
 	void setCategory(string category);
@@ -23,9 +23,7 @@ public:
 	string getCategory();
 	string getCountry();
 	string getCity();
-
-	void addHotel();
-	void printData();
+		
 
 private:
 

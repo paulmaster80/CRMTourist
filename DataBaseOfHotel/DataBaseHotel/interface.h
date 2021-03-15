@@ -1,10 +1,20 @@
 #pragma once
+#include"database.h"
 
-#include<iostream>
-#include "hotel.h"
+class UserInterface
+{
+public:
+	UserInterface(DatabaseHotel& db);
+	int outputMenuConsole();
+	void menuOperations();
+	void inputNewHotel();
+	void searchHotel();
+	void editDataHotel();
+	void printData();
 
-using namespace std;
+private:
+	DatabaseHotel& _db;
+};
 
-int outputMenuConsole();
-void menuOperations();
+
 

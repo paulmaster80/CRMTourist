@@ -1,35 +1,30 @@
 #include "hotel.h"
-#include <iostream>
 
-using namespace std;
 
-Hotel::Hotel()
-{
-    _name = "";
-    _adress = "";
-    _category = "";
-    _country = "";
+Hotel::Hotel():_name("noname"), _adress("noadress"), _category("nocategory"), _country("nocountry")
+{   
 }
 
-Hotel::Hotel(string name, string adress, string category, string country,string _city)
+Hotel::Hotel(string name, string adress, string category, string country,string city)
 {
     _name = name;
     _adress = adress;
     _category = category;
     _country = country;
+    _city = city;
 }
 
 Hotel::~Hotel()
 {
 }
 
-void Hotel::setData(string name, string adress, string category, string country, string _city)
-{
-    _name = name;
-    _adress = adress;
-    _category = category;
-    _country = country;
-}
+//void Hotel::setData(string name, string adress, string category, string country, string _city)
+//{
+//    _name = name;
+//    _adress = adress;
+//    _category = category;
+//    _country = country;
+//}
 
 void Hotel::setName(string name)
 {
@@ -81,18 +76,4 @@ string Hotel::getCity()
     return _city;
 }
 
-void Hotel::addHotel()
-{
-    Hotel hotel;
-    cout << "Название: " << endl;
-    
-}
 
-void Hotel::printData()
-{
-    cout << "Отель: " << _name << endl;
-    cout << "Страна: " << _country << endl;
-    cout << "Город: " << _city << endl;
-    cout << "Адрес: " << _adress << endl;
-    cout << "Категория: " << _category << endl;
-}
