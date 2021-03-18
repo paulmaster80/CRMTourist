@@ -18,11 +18,11 @@ public:
 	void setCategory(string category);
 	void setCountry(string country);
 	void setCity(string city);
-	string getName();
-	string getAdress();
-	string getCategory();
-	string getCountry();
-	string getCity();
+	string getName()const;
+	string getAdress()const;
+	string getCategory()const;
+	string getCountry()const;
+	string getCity()const;
 		
 
 private:
@@ -32,4 +32,6 @@ private:
 	string _category;
 	string _country;
 	string _city;
+	static int lastNumber;
+	int _id;
 };

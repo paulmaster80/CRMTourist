@@ -10,5 +10,9 @@ int main()
     DatabaseHotel& dataBaseHotel= *new DatabaseHotel;
     UserInterface& userInterface = *new UserInterface(dataBaseHotel);
     
+
+    
+    delete& userInterface;
+    delete& dataBaseHotel;
 }
 

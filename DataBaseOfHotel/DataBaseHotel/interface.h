@@ -10,7 +10,7 @@ public:
 	void inputNewHotel();
 	void searchHotel();
 	void editDataHotel();
-	void printData();
+	void printData(int number);
 
 private:
 	DatabaseHotel& _db;

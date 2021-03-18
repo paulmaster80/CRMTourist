@@ -18,3 +18,8 @@ void DatabaseHotel::editDataHotel()
 void DatabaseHotel::deleteHotel()
 {
 }
+
+const Hotel& DatabaseHotel::getHotel(int number) const
+{
+	return _hotel[number];
+}

@@ -84,24 +84,12 @@ void UserInterface::menuOperations()
 	cout << "Good bye!" << endl;
 }
 
-void UserInterface::inputNewHotel()
-{
 
-}
-
-void UserInterface::searchHotel()
+void UserInterface::printData(int number)
 {
-}
-
-void UserInterface::editDataHotel()
-{
-}
-
-void UserInterface::printData()
-{
-	cout << "Отель: " << Hotel::getName << endl;
-	cout << "Страна: " << Hotel::getCountry << endl;
-	cout << "Город: " << Hotel::getCity << endl;
-	cout << "Адрес: " << Hotel::getAdress << endl;
-	cout << "Категория: " << Hotel::setCategory << endl;
+	cout << "Отель: " << _db.getHotel(number).getName() << endl;
+	cout << "Страна: " << _db.getHotel(number).getCountry() << endl;
+	cout << "Город: " << _db.getHotel(number).getCity() << endl;
+	cout << "Адрес: " << _db.getHotel(number).getAdress() << endl;
+	cout << "Категория: " << _db.getHotel(number).getCategory() << endl;
 }
